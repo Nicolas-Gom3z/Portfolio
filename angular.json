@@ -32,11 +32,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/types/typings.d.ts",
-              {
-                "glob": "_redirects",
-                "input": "src",
-                "output": "/"
-              }
+              "src/_redirects"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
