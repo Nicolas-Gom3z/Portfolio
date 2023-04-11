@@ -31,7 +31,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/types/typings.d.ts"
+              "src/assets/types/typings.d.ts",
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              }
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
