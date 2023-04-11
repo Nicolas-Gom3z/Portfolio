@@ -1,0 +1,11 @@
+
+<i (click)="clipboardClick(clipboardContent)"  class="bi bi-clipboard ms-2">
+</i>
+
+
+
+<div [hidden]="!active"
+      [ngClass]="{'animate__fadeInUp':opening,'animate__fadeOut':closing}"
+      class="badget-container animate__animated ">
+  <span class="floating-bagdet text-dark">{{toastContent}} <i class="bi bi-clipboard2-check text-dark"></i>
+  </span></div>

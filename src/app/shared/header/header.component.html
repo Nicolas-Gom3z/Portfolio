@@ -1,0 +1,96 @@
+<!-- NavBar -->
+<nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid nav-container mw-1200">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="/assets/img/Logo.svg" alt="Nicolas Gómez Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+
+      <ul class="navbar-nav my-2 my-lg-0 ">
+        <li class="nav-item me-4">
+          <a class="nav-link" aria-current="page" href="#">Portafolio</a>
+        </li>
+
+
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#contactModal">Contacto</button>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- NavBar END -------------------- -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content pb-4">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+
+          <div class="col text-center">
+            <img src="assets/img/Profile.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="row text-center ">
+          <h5 class="card-name">Nicolás Giovanni Gómez Moreno</h5>
+          <p class="profesion">Ingeniero en Artes Digitales</p>
+        </div>
+
+        <div class="section-card row justify-content-center mx-auto">
+          <div class="col d-flex flex-column align-items-center justify-content-center border rounded p-3">
+            <p class="contact-number mb-2">(+57) {{telefono}}
+
+              <app-custom-toast [clipboardContent]="telefono" [toastContent]= "'Teléfono Copiado'" ></app-custom-toast>
+            </p>
+            <a href="https://wa.link/xnr6zs" 
+            target="_blank"
+            class="btn btn-success"><i class="bi bi-whatsapp me-1"></i>Whatsapp</a>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="section-card row justify-content-center mx-auto mt-3  ">
+          <div class="col w-100 d-flex flex-column align-items-center justify-content-center border rounded p-3">
+            <p class="contact-number mb-2">
+              {{email}}
+              <app-custom-toast [clipboardContent]="email" [toastContent]= "'E-mail Copiado'" ></app-custom-toast>
+            </p>
+            <a href="mailto:{{email}}" class="btn btn-primary"><i class="bi bi-envelope me-1"></i> E-mail</a>
+          
+          </div>
+
+          
+        </div>
+
+      </div>
+
+      
+
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+

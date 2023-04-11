@@ -1,0 +1,78 @@
+@use '/src/scss/utilities/variables' as *;
+@use '/src/scss/utilities/mixins' as *;
+
+
+#navBar{
+
+  .logo{
+    width: 80px;
+  }
+
+  .nav-link{
+    margin-bottom: 10px; 
+
+    @include min-w(992){
+      margin-bottom: 0;
+    }
+
+  }
+
+  .nav-link,button{
+    @include title;
+  }
+  .nav-container{
+    width: 90%;
+    @include min-w(992){
+      width: 75%;
+    }
+  }
+
+}
+
+#contactModal{
+
+
+  .card-name{
+    margin-top: 10px;
+    margin-bottom: 0;
+    @include title;
+    
+  }
+  
+  .profesion{
+    @include subTitle;
+  }
+
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+.section-card{
+
+  .contact-number{
+    @include text;
+
+    i{
+      color:$primary;
+
+      &:hover{
+        filter:drop-shadow(0 0 2px $primary);
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  @include min-w(500){
+    width: 75%;
+  }
+
+}
+
+.test{
+  position: relative;
+}

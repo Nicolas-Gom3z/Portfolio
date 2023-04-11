@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+
+@forward 'scss/base/typography';
+
+@forward 'scss/utilities/mixins';
+
+@forward 'scss/vendors/bootstrap';
+
+@forward 'scss/layout/header';
+
+@forward 'scss/pages/home';
+
+@forward 'scss/themes/admin';
+
+
+h1{
+  font-family: 'Inconsolata', monospace;
+}
+
+h2,h3{
+  font-family: 'Roboto Mono', monospace;
+}
+
+p{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.mw-1200{
+  max-width: 1200px;
+}
+
+.badget-container{
+  width: 100%;
+  position: fixed;
+  z-index: 1100;
+  text-align: center;
+  bottom: 5%;
+  left: 0;
+
+  
+}
+
+.floating-bagdet{
+  background-color: #FFAC30; 
+  padding: 12px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+$primary:#FFAC30;
+$secondary:#3DA3FF;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+// sass/
+// |
+// |– abstracts/ (or utilities/)
+// |   |– _variables.scss    // Sass Variables
+// |   |– _functions.scss    // Sass Functions
+// |   |– _mixins.scss       // Sass Mixins
+// |
+// |– base/
+// |   |– _reset.scss        // Reset/normalize
+// |   |– _typography.scss   // Typography rules
+// |
+// |– components/ (or modules/)
+// |   |– _buttons.scss      // Buttons
+// |   |– _carousel.scss     // Carousel
+// |   |– _slider.scss       // Slider
+// |
+// |– layout/
+// |   |– _navigation.scss   // Navigation
+// |   |– _grid.scss         // Grid system
+// |   |– _header.scss       // Header
+// |   |– _footer.scss       // Footer
+// |   |– _sidebar.scss      // Sidebar
+// |   |– _forms.scss        // Forms
+// |
+// |– pages/
+// |   |– _home.scss         // Home specific styles
+// |   |– _about.scss        // About specific styles
+// |   |– _contact.scss      // Contact specific styles
+// |
+// |– themes/
+// |   |– _theme.scss        // Default theme
+// |   |– _admin.scss        // Admin theme
+// |
+// |– vendors/
+// |   |– _bootstrap.scss    // Bootstrap
+// |   |– _jquery-ui.scss    // jQuery UI
+// |
+// `– main.scss              // Main Sass file
+
+// @import 'abstracts/variables';
+// @import 'abstracts/functions';
+// @import 'abstracts/mixins';
+
+// @import 'vendors/bootstrap';
+// @import 'vendors/jquery-ui';
+
+// @import 'base/reset';
+// @import 'base/typography';
+
+// @import 'layout/navigation';
+// @import 'layout/grid';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'layout/sidebar';
+// @import 'layout/forms';
+
+// @import 'components/buttons';
+// @import 'components/carousel';
+// @import 'components/slider';
+
+// @import 'pages/home';
+// @import 'pages/about';
+// @import 'pages/contact';
+
+// @import 'themes/theme';
+// @import 'themes/admin';
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,20 @@
+@use '/src/scss/utilities/variables' as *;
+
+.but-primary{
+
+  background-color: $warn;
+  color: white;
+  border: $warn;
+
+  &:hover{
+    background-color: #d65418;
+    border-color: #d65418;
+    color: white;
+  }
+  &:active{
+    background-color: #c44d16 !important;
+    border-color: #c44d16 !important;
+    color: white !important;
+  }
+
+}

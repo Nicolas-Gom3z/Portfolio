@@ -1,0 +1,43 @@
+@use 'variables' as *;
+
+
+@mixin resetSpace {
+  padding: 0;
+  margin: 0;
+}
+
+
+@mixin min-w($size){
+  @media (min-width: #{$size}px){
+    @content;
+  }
+}
+
+@mixin max-w($size){
+  @media (min-width: #{$size}px){
+    @content;
+  }
+}
+
+
+@mixin maxWidth($num){
+
+  @media (min-width: px){
+
+  }
+
+}
+
+@mixin title{
+  font-family: 'Inconsolata', monospace;
+}
+
+@mixin subTitle{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+}
+
+@mixin text{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
