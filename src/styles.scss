@@ -48,8 +48,67 @@ p{
   text-align: center;
 }
 
+//* Estilos del scroll ------------------
+
+// // Chrome, Edge y Safari
+
+// body::-webkit-scrollbar {
+//   width: 8px;               /* width of the entire scrollbar */
+// }
+
+// body::-webkit-scrollbar-track {
+//   background: transparent;        /* color of the tracking area */
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background-color: #3e464f;    /* color of the scroll thumb */
+//   border-radius: 20px;       /* roundness of the scroll thumb */
+//   border: 1px solid transparent;  /* creates padding around scroll thumb */
+// }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3e464f #2d2d2d;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3e464f;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+
+
+
+//* Estilos del scroll --------FIN----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+//! Modificaciones variables de bootstrap
+
+
 $primary:#FFAC30;
-$secondary:#3DA3FF;
+$secondary:#2572A3;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
