@@ -9,35 +9,86 @@
   overflow: hidden;
 
   video{
-    position: absolute;
+    position: relative;
     z-index: -10;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
+    max-height: 675px;
     object-fit: none;
     object-position: center;
+
+    @include min-w(1280){
+      object-fit: cover;
+      max-height: 696px;
+    }
+    @include min-w(1400){
+      min-height: 740px;
+      max-height: 100%;
+    }
     
   }
 
   .hero-content{
+    padding: 1.4rem;
     position: absolute;
-    right: 20%;
-    top:35%;
+    left: 0;
+    top:30%;
     display: flex;
     flex-direction: column;
     max-width: 565px;
     text-align: right;
+    z-index: -10;
+
+    @include min-w(630){
+      left: unset;
+      right: 10%;
+    }
+
+    @include min-w(1400){
+      left: unset;
+      right: 15%;
+    }
+
+
+
   }
 
   h1{
     color: $primary;
-    font-size: 2.9rem;
+    font-size: 2.1rem;
+
+    @include min-w(530){
+      font-size: 2.5rem;
+    }
+
+    @include min-w(768){
+      font-size: 2.9rem;
+    }
+
   }
   h2{
+    font-size: 1.1rem;
+
     
-    font-size: 1.6rem;
+    @include min-w(530){
+      font-size: 1.4rem;
+    }
+
+    @include min-w(768){
+      font-size: 1.6rem;
+    }
   }
   h3{
-    font-size: 1.6rem;
+    font-size: 1rem;
+
+    @include min-w(530){
+      font-size: 1.2rem;
+    }
+
+    @include min-w(768){
+      font-size: 1.6rem;
+    }
+    
   }
 
 }
