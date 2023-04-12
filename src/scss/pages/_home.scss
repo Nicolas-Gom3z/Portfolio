@@ -107,6 +107,7 @@
 
   @include min-w(992){
     flex-direction: row;
+    column-gap: 1rem;
   }
 
 
@@ -117,7 +118,7 @@
 
     @include min-w(992){
       width: 65%;
-      margin: 0 1.5rem 0 0;
+      margin: 0 0 0 1rem;
     }
   }
 
@@ -134,7 +135,7 @@
     
     @include min-w(992){
       width: 35%;
-      margin: 0;
+      margin: 0 1rem 0 0;
     }
 
     h3{
@@ -184,14 +185,36 @@
 
 }
 
-.experience{
+.portfolio{
 
-  .experience-content{
+  .portfolio-content{
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
     background-color: #343a40;
 
+    @include min-w(992){
+        
+      margin: 0 1rem 1rem 1rem
+
+    }
 
     h3{
       @include title;
+    }
+
+    .card-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include min-w(992){
+        
+        flex-direction: row;
+        column-gap: 15px;
+        justify-content: center;
+
+      }
+
     }
 
     .card{
@@ -208,6 +231,17 @@
           border-radius: 50%;
         }
 
+      }
+
+      .title-container{
+        display: flex;
+        column-gap: 15px;
+
+        span{
+          font-size: 1.25rem;
+          line-height: 1.2;
+          font-style: italic;
+        }
       }
 
     
