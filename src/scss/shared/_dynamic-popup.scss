@@ -1,0 +1,52 @@
+@use '/src/scss/utilities/variables' as *;
+@use '/src/scss/utilities/mixins' as *;
+
+
+
+.modal-dialog.custom-modal{
+
+  
+
+  @include max-w(576){
+    width: 90%;
+    max-width: 1695px;
+  }
+
+
+  .modal-header{
+
+    span{
+
+      @include subTitle();
+      color: $primary;
+
+    }
+
+  }
+
+  .modal-body{
+    // padding-top: 0;
+    // padding-bottom: 0;
+  }
+
+  .summary{
+    width: 100%;
+
+    @include min-w(992){
+      width: 66.6%;
+    }
+  }
+
+  .media{
+    width: 100%;
+    
+    @include min-w(992){
+      width: 33.3%;
+      border-left: 1px solid #495057;
+    }
+
+  }
+
+
+}
+

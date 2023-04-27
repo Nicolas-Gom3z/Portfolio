@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PortafolioCard } from '../../interfaces/portafolioCard.interface';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   ]
 })
 export class HomeComponent {
+
+  educacionyhabitos:PortafolioCard = {
+    id: 'educyhabModal'
+  }
 
 }
