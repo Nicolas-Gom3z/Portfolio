@@ -9,7 +9,7 @@ export interface PortafolioCard{
   objetivo:string,
   metodologia:string[],
   tecnologias:Tecnologias[],
-  poster:string,
+  poster:string[],
   enlace?:string
 
 
