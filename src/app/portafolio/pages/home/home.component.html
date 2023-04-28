@@ -112,85 +112,14 @@
     <h3 class="text-primary text-center mb-4">Portafolio</h3>
 
     <div class="card-container">
+      <app-dynamic-popup *ngFor="let card of cards" class="card-container"
+      [card] = "card"></app-dynamic-popup>
 
-      <div class="card px-2 mb-3">
-        <div class="row align-items-center g-0">
-          <div class="img-container">
-            <img src="../assets/img/educacionyhabitos.jpg" class="img-fluid" alt="...">
-          </div>
-          
-          <div class="col">
-            <div class="card-body">
-              <div class="title-container">
-                <h5 class="card-title">Educación y Hábitos</h5><span class="text-primary">Página Web y Blog</span> 
-              </div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Finalizada en Diciembre de 2022</small></p>
-              <button class="btn btn-outline-primary">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card px-2 mb-3">
-        <div class="row align-items-center g-0">
-          <div class="img-container">
-            <img src="../assets/img/seletiene.jpg" class="img-fluid" alt="...">
-          </div>
-          
-          <div class="col">
-            <div class="card-body">
-              <div class="title-container">
-                <h5 class="card-title">Seletiene Shop</h5><span class="text-primary">Tienda Virtual Dropshipping</span> 
-              </div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Finalizada en Diciembre de 2022</small></p>
-              <button class="btn btn-outline-primary">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card px-2 mb-3">
-        <div class="row align-items-center g-0">
-          <div class="img-container">
-            <img src="../assets/img/laljoyeria.jpg" class="img-fluid" alt="...">
-          </div>
-          
-          <div class="col">
-            <div class="card-body">
-              <div class="title-container">
-                <h5 class="card-title">Lal Joyería</h5><span class="text-primary">Tienda Virtual y Blog</span> 
-              </div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Finalizada en Diciembre de 2022</small></p>
-              <button class="btn btn-outline-primary">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card px-2 mb-3">
-        <div class="row align-items-center g-0">
-          <div class="img-container">
-            <img src="../assets/img/slt.jpg" class="img-fluid" alt="...">
-          </div>
-          
-          <div class="col">
-            <div class="card-body">
-              <div class="title-container">
-                <h5 class="card-title">Smart Law Tech</h5><span class="text-primary">Página Web Dinámica</span> 
-              </div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Finalizada en Diciembre de 2022</small></p>
-              <button class="btn btn-outline-primary">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    
     </div>
+
+
+
+      
 
     <h3 class="text-primary text-center my-4">Proyectos Personales</h3>
   
@@ -215,31 +144,13 @@
         </div>
       </div>
 
-      <div class="card px-2 mb-3">
-        <div class="row align-items-center g-0">
-          <div class="img-container">
-            <img src="../assets/img/seletiene.jpg" class="img-fluid" alt="...">
-          </div>
-          
-          <div class="col">
-            <div class="card-body">
-              <div class="title-container">
-                <h5 class="card-title">Web Cursos</h5><span class="text-primary">Página Web</span> 
-              </div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Finalizada en Diciembre de 2022</small></p>
-              <button  class="btn btn-outline-primary" data-bs-toggle="modal"
-              data-bs-target="#educyhabModal">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
     </div>
 
   </div>
 
 
-  <app-dynamic-popup [id]="educacionyhabitos.id"></app-dynamic-popup>
+  
 
 </section>

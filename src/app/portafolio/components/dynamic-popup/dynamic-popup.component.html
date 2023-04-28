@@ -1,8 +1,31 @@
-<div class="modal fade" id="{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+<div class="card px-2 mb-3">
+  <div class="row align-items-center g-0">
+    <div class="img-container">
+      <img src="{{card.imgDestacada}}" class="img-fluid" alt="...">
+    </div>
+    
+    <div class="col">
+      <div class="card-body">
+        <div class="title-container">
+          <h5 class="card-title">{{card.title}}</h5><span class="text-primary">{{card.subTitle}}</span> 
+        </div>
+        <p class="card-text">{{card.summary}}</p>
+        <p class="card-text"><small class="text-body-secondary">{{card.date}}</small></p>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+        [attr.data-bs-target]="'#'+card.id">Ver más</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="{{card.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5">Educación y Hábitos - <span>Página Web y Blog</span>
+        <h1 class="modal-title fs-3">{{card.title}}<span class="separator"> - </span><span class="fs-5 complement">{{card.subTitle}}</span>
         </h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -12,84 +35,36 @@
         <div class="row">
           <div class="summary py-3">
 
-            <h2>Objetivo</h2>
+            <h3 class="fs-5 text-primary">Objetivo</h3>
 
-            <p>Promocionar el lanzamiento del libro "Cómo generar hábitos y divertirse en el proceso" y tambíen dar a conocer diferentes servicios referentes a la Analitica de datos, consultorias de educación superior, cursos, diplomados y demás.
+            <p>{{card.objetivo}}</p>
+
+            <h3 class="fs-5 text-primary">Metodología Utilizada</h3>
+            <p *ngFor="let parrafo of card.metodologia">
+              {{parrafo}}
             </p>
-
-            <h3>Metodología Utilizada</h3>
-            <p>Se realiza el mockup teniendo en cuenta referentes del cliente y requerimientos. Luego de tener una estructura base clara se diseña un prototipo que permite simular la experiecnia que tendra el usuario navegando e interactuando en las diferentes secciones de la página.</p>
-            <p>Teniendo el diseño aprobado se procede a configurar Wordpress y a maquetar las diferentes secciones ya establecidas anteriormente con ayuda de Elementor</p>
             
-            <h3>Tecnologias y herramientas utilizadas</h3>
-            <ul>
-              <li>Wordpress</li>
-              <li>Elementor</li>
-              <li>Figma</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe Illustrator</li>
-              <li>CSS</li>
+            <h3 class="fs-5 text-primary">Tecnologias y herramientas utilizadas</h3>
+            <ul class="tools-list mt-4">
+              <li *ngFor="let item of card.tecnologias">
+                <img class="me-2" src="{{item.imagen}}" alt=""><span>{{item.texto}}</span></li>
+
             </ul>
   
           </div>
   
-          <div class="media p-0">
-            <img src="/assets/img/Logo.svg" alt="">
+          <div class="media py-3">
+            <img src="{{card.poster}}" alt="">
+            <a href="{{card.enlace}}" target="_blank" class="btn btn-outline-primary my-4"> Visitar sitio</a>
           </div>
         </div>
 
         
 
-
-        <!-- <div class="row">
-
-          <div class="col text-center">
-            <img src="assets/img/Profile.png" alt="">
-          </div>
-
-        </div>
-
-        <div class="row text-center ">
-          <h5 class="card-name">Nicolás Giovanni Gómez Moreno</h5>
-          <p class="profesion">Ingeniero en Artes Digitales</p>
-        </div>
-
-        <div class="section-card row justify-content-center mx-auto">
-          <div class="col d-flex flex-column align-items-center justify-content-center border rounded p-3">
-            <p class="contact-number mb-2">(+57) xxxx
-
-            </p>
-            <a href="https://wa.link/xnr6zs" 
-            target="_blank"
-            class="btn btn-success"><i class="bi bi-whatsapp me-1"></i>Whatsapp</a>
-
-
-
-          </div>
-
-        </div>
-
-        <div class="section-card row justify-content-center mx-auto mt-3  ">
-          <div class="col w-100 d-flex flex-column align-items-center justify-content-center border rounded p-3">
-            <p class="contact-number mb-2">
-              xxxx
-              
-            </p>
-            <a href="mailto:xxx" class="btn btn-secondary text-light"><i class="bi bi-envelope me-1"></i> E-mail</a>
-          
-          </div>
-
-          
-        </div> -->
-
       </div>
 
       
 
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-      </div> -->
     </div>
   </div>
-</div>
-
+</div> 
