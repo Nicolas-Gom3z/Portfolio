@@ -26,7 +26,7 @@ export class DynamicPopupComponent {
       objetivo:'',
       metodologia:[],
       tecnologias:[],
-      poster:'',
+      poster:[],
       enlace: ''
     };
 

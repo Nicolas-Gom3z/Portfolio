@@ -1,6 +1,7 @@
 export interface PortafolioCard{
 
   id:string,
+  dataTarget?:string,
   imgDestacada:string,
   title:string,
   subTitle:string,
@@ -9,7 +10,7 @@ export interface PortafolioCard{
   objetivo:string,
   metodologia:string[],
   tecnologias:Tecnologias[],
-  poster:string,
+  poster:string[],
   enlace?:string
 
 

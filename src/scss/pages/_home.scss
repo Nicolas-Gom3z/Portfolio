@@ -5,15 +5,15 @@
 .hero{
 
   max-width: 100vw;
-  height: 100vh;
+  height: 88vh;
   max-height: 675px;
 
   @include min-w(1280){
     max-height: 696px;
   }
   @include min-w(1400){
-    min-height: 740px;
-    max-height: 100%;
+    min-height: 88vh;
+    // max-height: 100%;
   }
 
   video{
@@ -27,7 +27,7 @@
 
     @include min-w(1280){
       object-fit: cover;
-      max-height: 696px;
+      // max-height: 696px;
     }
     @include min-w(1400){
       min-height: 740px;
@@ -221,3 +221,111 @@
 
   }
 }
+
+.experience-awards{
+  
+  display: flex;
+  flex-direction: column;
+  @include min-w(992){
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .awards{
+
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
+    background-color: #343a40;
+
+    @include min-w(992){
+      width: 45%;
+      margin: 0 0 0 1rem;
+    }
+
+    h3{
+      @include title;
+      font-size: 2.2rem;
+    }
+
+
+  }
+
+  .history{
+    ul{
+      padding: 0;
+      position: relative;
+      list-style: none;
+
+      li{
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+
+    }
+    .job{
+      display: flex;
+      align-items: center;
+      
+      .job-title{
+        @include title;
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        color:white;
+        
+        .subtitle{
+          display: block;
+          @include subTitle();
+          font-size: 1.1rem;
+          color:$primary;
+
+          @include min-w(992){
+            display: inline-block;
+          }
+
+        }
+      } 
+      
+      &.active{
+        .job-title{
+          color: $primary;
+
+          
+        }
+      }
+      
+
+    }
+
+    .job-description{
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+    }
+
+
+    .line{
+      position: absolute;
+      left: 7px;
+      top: 30px;
+      width: 2px;
+      height: 100%;
+      background-color: $primary;
+    }
+  }
+
+  .experience-content{
+    background-color: #343a40;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
+    
+    @include min-w(992){
+      width: 55%;
+      margin: 0 1rem 0 0;
+    }
+
+  }
+  
+}
+

@@ -163,16 +163,11 @@
     @include min-w(992){
       width: 33.3%;
       border-left: 1px solid #495057;
+      padding-left: 1.2rem;
     }
 
     img{
       
-      max-width: 450px;
-      width: 90%;
-
-      @include min-w(992){
-        margin-top: 2rem;
-      }
 
     }
 
