@@ -4,6 +4,17 @@
 
 #navBar{
 
+  &.onScroll{
+    @include min-w(992){
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      z-index: 1024;
+    }
+  }
+
+
   .logo{
     width: 80px;
   }
@@ -20,6 +31,7 @@
   .nav-link,button{
     @include title;
   }
+
   .nav-container{
     width: 90%;
     @include min-w(992){

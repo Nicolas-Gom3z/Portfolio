@@ -386,3 +386,34 @@
   
 }
 
+
+.hobbies{
+
+  h3{
+    @include title;
+    font-size: 2.2rem;
+  }
+
+  .hobbies-content{
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
+    background-color: #343a40;
+
+    @include min-w(992){
+        
+      margin: 0 1rem 1rem 1rem
+
+    }
+
+    .description{
+      width: 50%;
+    }
+    .carousel{
+      width: 50%;
+    }
+
+
+  }
+
+
+}

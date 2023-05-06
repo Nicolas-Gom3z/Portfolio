@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortafolioService } from 'src/app/portafolio/services/portafolio.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class HeaderComponent implements OnInit{
   @ViewChild('toastElement') toastElement!:ElementRef<HTMLInputElement>;
 
   constructor(
-    private portafolioService:PortafolioService
+    private portafolioService:PortafolioService,
+    private router:Router
     
     ){}
 
@@ -29,9 +31,6 @@ export class HeaderComponent implements OnInit{
 
   clickTel: boolean = false;
   clickMail: boolean = false;
-
-  
-
 
 
 
