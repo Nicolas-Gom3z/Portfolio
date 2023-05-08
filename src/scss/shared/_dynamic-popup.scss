@@ -130,10 +130,13 @@
     }
 
     .tools-list{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+      // display: flex;
+      // justify-content: center;
+      // flex-wrap: wrap;
+      // column-gap: 10px;
       padding: 0;
       list-style: none;
 

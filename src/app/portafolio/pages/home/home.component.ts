@@ -12,7 +12,6 @@ export class HomeComponent {
   cards:PortafolioCard[] = [
 
     {
-      "id": "educyhabModal",
       "imgDestacada":"../assets/img/educacionyhabitos.jpg",
       "title": "Educación y Hábitos",
       "subTitle": "Página Web y Blog",
@@ -60,7 +59,7 @@ export class HomeComponent {
 
 
     {
-      "id": "laljoyeriaModal",
+  
       "imgDestacada":"../assets/img/laljoyeria.jpg",
       "title": "Lal Joyería",
       "subTitle": "Tienda Virtual y Blog",
@@ -80,12 +79,8 @@ export class HomeComponent {
           "texto": "Woocommerce"
         },
         {
-          "imagen": "/assets/img/Divi.svg",
-          "texto": "Divi"
-        },
-        {
-          "imagen": "/assets/img/figma.svg",
-          "texto": "Figma"
+          "imagen": "/assets/img/elementor.svg",
+          "texto": "Elementor"
         },
         {
           "imagen": "/assets/img/photoshop.svg",
@@ -102,23 +97,36 @@ export class HomeComponent {
         {
           "imagen": "/assets/img/js.svg",
           "texto": "JavaScript"
+        },
+        {
+          "imagen": "/assets/img/tagmanager.svg",
+          "texto": "Tag Manager"
+        },
+        {
+          "imagen": "/assets/img/analytics.svg",
+          "texto": "Google Analytics"
+        },
+        {
+          "imagen": "/assets/img/facebook.svg",
+          "texto": "Business Manager"
         }
       ],
       "poster":[
-        "/assets/img/Educacion1.jpg",
-        "/assets/img/Educacion2.jpg",
-        "/assets/img/Educacion3.jpg"
+        "/assets/img/Lal1.jpg",
+        "/assets/img/Lal2.jpg",
+        "/assets/img/Lal3.jpg",
+        "/assets/img/Lal4.jpg",
+        "/assets/img/Lal5.jpg",
 
       ],
-      "enlace": "https://educacionyhabitos.com/"
+      "enlace": "https://laljoyeria.com/"
     },
 
     {
-      "id": "seletieneModal",
       "imgDestacada":"../assets/img/seletiene.jpg",
       "title": "Seletiene Shop",
       "subTitle": "Tienda Virtual Dropshipping",
-      "summary":"Tienda virtual bajo el modelo de <b>Dropshipping</b> con una estrategia efectiva para aumentar las ventas y la visibilidad de la marca en línea. Este proceso implica la creación de una tienda en línea que vende productos sin tener un inventario físico propio, y la promoción de dicha tienda mediante campañas por medio del entorno que ofrece Google.",
+      "summary":"Tienda virtual bajo el modelo de <b>Dropshipping</b> con una estrategia efectiva para aumentar las ventas y la visibilidad de la marca en línea. Este proceso implica la creación de una tienda en línea que vende productos sin tener un inventario físico propio, y la promoción de dicha tienda mediante campañas por medio del entorno que ofrece Google y Facebook.",
       "date": "Finalizada en Diciembre del 2022",
       "objetivo": "El objetivo de este proyecto es promocionar el lanzamiento del libro 'Cómo generar hábitos y divertirse en el proceso', a la vez que se dan a conocer diversos servicios relacionados con la analítica de datos, consultorías de educación superior, cursos, diplomados y otros. En su sitio web, se encuentra disponible información detallada sobre cada uno de estos servicios, así como recursos y herramientas para facilitar el proceso de aprendizaje y crecimiento personal de los usuarios. Como parte de la comunidad, se pueden acceder a contenidos exclusivos y descuentos especiales en productos y servicios afines a los temas de interés. El proyecto tiene como finalidad proporcionar un espacio integral para la adquisición de conocimientos y la mejora de hábitos saludables de una manera amena y efectiva.",
       "metodologia":[
@@ -161,12 +169,27 @@ export class HomeComponent {
         {
           "imagen": "/assets/img/css.svg",
           "texto": "CSS"
+        },
+        {
+          "imagen": "/assets/img/tagmanager.svg",
+          "texto": "Google Tag Manager"
+        },
+        {
+          "imagen": "/assets/img/analytics.svg",
+          "texto": "Google Analytics"
+        },
+        {
+          "imagen": "/assets/img/facebook.svg",
+          "texto": "Business Manager"
         }
       ],
       "poster":[
-        "/assets/img/Educacion1.jpg",
-        "/assets/img/Educacion2.jpg",
-        "/assets/img/Educacion3.jpg"
+        "/assets/img/seletiene1.jpg",
+        "/assets/img/seletiene2.jpg",
+        "/assets/img/seletiene3.jpg",
+        "/assets/img/seletiene4.jpg",
+        "/assets/img/seletiene5.jpg",
+        "/assets/img/seletiene6.jpg",
 
       ],
       "enlace": "https://educacionyhabitos.com/"
@@ -175,7 +198,7 @@ export class HomeComponent {
     
 
     {
-      "id": "sltModal",
+
       "imgDestacada":"../assets/img/slt.jpg",
       "title": "Smart Law Tech",
       "subTitle": "Web Dinámica",
@@ -219,12 +242,13 @@ export class HomeComponent {
         
       ],
       "poster":[
-        "/assets/img/Educacion1.jpg",
-        "/assets/img/Educacion2.jpg",
-        "/assets/img/Educacion3.jpg"
+        "/assets/img/slt1.jpg",
+        "/assets/img/slt2.jpg",
+        "/assets/img/slt3.jpg"
 
       ],
-      "enlace": "https://educacionyhabitos.com/"
+      "enlace": "https://educacionyhabitos.com/",
+      "anotacion": "* Actualmente el sitio ya no se encuentra en linea,sin embargo este enlace lleva a uno de los prototipos funcionales creados y alojados en un servidor provisional"
     }
   
   
