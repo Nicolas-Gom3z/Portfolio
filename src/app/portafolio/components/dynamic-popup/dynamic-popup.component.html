@@ -11,7 +11,7 @@
         <div class="title-container">
           <h5 class="card-title">{{card.title}}</h5><span class="text-primary">{{card.subTitle}}</span> 
         </div>
-        <p class="card-text" [innerHTML]="card.summary"></p>
+        <p class="card-text summary-text" [innerHTML]="card.summary"></p>
         <p class="card-text"><small class="text-body-secondary">{{card.date}}</small></p>
         <button class="btn btn-outline-primary" data-bs-toggle="modal"
         [attr.data-bs-target]="'#'+idCreator('Modal')">Ver más</button>
@@ -37,12 +37,10 @@
 
             <h3 class="fs-5 text-primary">Objetivo</h3>
 
-            <p>{{card.objetivo}}</p>
+            <p [innerHTML]="card.objetivo"></p>
 
             <h3 class="fs-5 text-primary">Metodología Utilizada</h3>
-            <p *ngFor="let parrafo of card.metodologia">
-              {{parrafo}}
-            </p>
+            <p class="metodologia-content" *ngFor="let parrafo of card.metodologia" [innerHTML]="parrafo"></p>
             
             <h3 class="fs-5 text-primary">Tecnologias y herramientas utilizadas</h3>
             <ul class="tools-list mt-4">
@@ -65,11 +63,11 @@
                 
               </div>
               <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#'+idCreator('Carrousel')" data-bs-slide="prev">
-                <span aria-hidden="true"><i class="bi bi-caret-left-fill fs-1"></i></span>
+                <span aria-hidden="true"><i class="bi bi-caret-left-fill"></i></span>
                 <span class="visually-hidden">Anterior</span>
               </button>
               <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#'+idCreator('Carrousel')" data-bs-slide="next">
-                <span aria-hidden="true"><i class="bi bi-caret-right-fill fs-1"></i></span>
+                <span aria-hidden="true"><i class="bi bi-caret-right-fill"></i></span>
                 <span class="visually-hidden">Siguiente</span>
               </button>
             </div>

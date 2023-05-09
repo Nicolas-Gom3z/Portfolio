@@ -25,6 +25,15 @@
     flex-direction: column;
     
 
+    .summary-text{
+      @include min-w(992){
+        min-height: 240px;
+      }
+      @include min-w(1080){
+        min-height: 200px;
+      }
+    }
+
 
     button{
 
@@ -120,6 +129,11 @@
   .modal-body{
     // padding-top: 0;
     // padding-bottom: 0;
+
+    .metodologia-content{
+      margin-bottom: 0.8rem;
+    }
+
   }
 
   .summary{
@@ -167,7 +181,22 @@
       width: 33.3%;
       border-left: 1px solid #495057;
       padding-left: 1.2rem;
+
     }
+
+    .carousel-control-prev,.carousel-control-next{
+
+      color:$primary;
+      
+      i{
+        background-color: $darkGray;
+        border-radius: 50%;
+        font-size: 2rem !important;
+      }
+
+    }
+
+
 
     img{
       

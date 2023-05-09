@@ -216,6 +216,13 @@
 
       }
 
+      app-dynamic-popup{
+        @include min-w(992){
+          max-width: 48%;
+        }
+        
+      }
+
     }
 
     
@@ -413,6 +420,36 @@
     }
 
 
+  }
+
+
+}
+
+.widget-container{
+  
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 2%;
+  right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  border-radius: 50%;
+  transition: transform .2s ease-in;
+
+  &:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+
+    
+  }
+
+
+  .whatsapp-bubble{
+    font-size: 1.6rem;
+    color: $darkGray;
   }
 
 
