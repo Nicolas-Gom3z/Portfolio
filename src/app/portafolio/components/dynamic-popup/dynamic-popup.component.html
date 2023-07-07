@@ -76,7 +76,7 @@
               <small>{{card.anotacion}}</small>
             </p>
 
-            <a href="{{card.enlace}}" target="_blank" class="btn btn-outline-primary my-4"> Visitar sitio</a>
+            <a *ngIf="card.enlace" href="{{card.enlace}}" target="_blank" class="btn btn-outline-primary my-4"> Visitar sitio</a>
 
             
 

@@ -25,14 +25,14 @@
     flex-direction: column;
     
 
-    .summary-text{
-      @include min-w(992){
-        min-height: 240px;
-      }
-      @include min-w(1080){
-        min-height: 200px;
-      }
-    }
+    // .summary-text{
+    //   @include min-w(992){
+    //     min-height: 240px;
+    //   }
+    //   @include min-w(1080){
+    //     min-height: 200px;
+    //   }
+    // }
 
 
     button{
@@ -161,8 +161,7 @@
         margin-bottom: 1rem;
 
         img{
-          width: 20%;
-          max-width: 28px;
+          width: 28px;
         }
 
       }

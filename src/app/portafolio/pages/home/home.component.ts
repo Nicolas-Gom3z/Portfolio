@@ -11,13 +11,78 @@ export class HomeComponent {
 
   cards:PortafolioCard[] = [
 
+    //Kojagraphic
+    {
+      "imgDestacada":"../assets/img/Kojak.jpg",
+      "title": "Kojagraphic",
+      "subTitle": "Múltiples Landing pages",
+      "summary":"Se diseñan y desarrollan diversos sitios web con el objetivo de posicionar productos de nichos variados. Cada sitio es capaz de recibir registros, crear alertas por medio de email y asi mismo almacenar la información en una base de datos externa.<br>Se implementa el pixel y se configuran los eventos principales del entorno de marketing que ofrece Google.",
+      "date": "Finalizada en Mayo del 2023",
+      "objetivo": "El objetivo de este proyecto es crear sitios web con contenido estratégicamente diseñado para maximizar el posicionamiento orgánico de los productos y servicios que se ofrecen. En este caso el cliente ya cuenta con una estructura semantica enfocada a productos y servicios.",
+      "metodologia":[
+        "A partir de la estructura base de cada sitio web, se procede al diseño considerando la paleta de colores seleccionada. Además, mediante el uso de inteligencia artificial, se genera el contenido de cada página de manera automatizada.",
+        "Uno de los requerimientos  de este proyecto es utilizar el constructor de bloques Kadeance para maquetar los sitios web. Además, nos aseguramos de obtener resultados satisfactorios en la analítica proporcionada por Yoast en cada página de cada sitio web."
+      ],
+      "tecnologias": [
+        {
+          "imagen": "/assets/img/wordpress.svg",
+          "texto": "Wordpress"
+        },
+        {
+          "imagen": "/assets/img/kadeance.png",
+          "texto": "Kadeance WP"
+        },
+        {
+          "imagen": "/assets/img/figma.svg",
+          "texto": "Figma"
+        },
+        {
+          "imagen": "/assets/img/photoshop.svg",
+          "texto": "Adobe Photoshop"
+        },
+        {
+          "imagen": "/assets/img/illustrator.svg",
+          "texto": "Adobe Illustrator"
+        },
+        {
+          "imagen": "/assets/img/css.svg",
+          "texto": "CSS"
+        },
+        {
+          "imagen": "/assets/img/css.svg",
+          "texto": "CSS"
+        },
+        {
+          "imagen": "/assets/img/tagmanager.svg",
+          "texto": "Google Tag Manager"
+        },
+        {
+          "imagen": "/assets/img/analytics.svg",
+          "texto": "Google Analytics"
+        },
+        {
+          "imagen": "/assets/img/facebook.svg",
+          "texto": "Business Manager"
+        }
+      ],
+      "poster":[
+        "/assets/img/llaverosmotos.jpg",
+        "/assets/img/desayunos.jpg",
+        "/assets/img/medallas.jpg",
+        "/assets/img/carnets.jpg",
+        "/assets/img/cajas.jpg"
+
+      ]
+    },
+
+    //Educación y Hábitos
     {
       "imgDestacada":"../assets/img/educacionyhabitos.jpg",
       "title": "Educación y Hábitos",
       "subTitle": "Página Web y Blog",
-      "summary":"La página web fue diseñada con el propósito de promover el lanzamiento del libro <b>'Cómo generar hábitos y divertirse en el proceso'</b> y al mismo tiempo, ofrecer servicios y educación relacionados con el tema a través del blog. Se estableció una estructura clara y amigable para brindar una experiencia de usuario satisfactoria y efectiva.<br> Además, se ofrece asesoría en el manejo del CMS para que el cliente sea capaz de administrar y actualizar la página.",
+      "summary":"La página web fue diseñada con el propósito de promover el lanzamiento del libro <b>'Cómo generar hábitos y divertirse en el proceso'</b> y al mismo tiempo, ofrecer servicios y educación relacionados con el tema a través del blog.  Además, se ofrece asesoría en el manejo del CMS para que el cliente sea capaz de administrar y actualizar la página.",
       "date": "Finalizada en Abril del 2023",
-      "objetivo": "El objetivo de este proyecto es promocionar el lanzamiento del libro 'Cómo generar hábitos y divertirse en el proceso', a la vez que se dan a conocer diversos servicios relacionados con la analítica de datos, consultorías de educación superior, cursos, diplomados y otros. En su sitio web, se encuentra disponible información detallada sobre cada uno de estos servicios, así como recursos y herramientas para facilitar el proceso de aprendizaje y crecimiento personal de los usuarios. Como parte de la comunidad, se pueden acceder a contenidos exclusivos y descuentos especiales en productos y servicios afines a los temas de interés. El proyecto tiene como finalidad proporcionar un espacio integral para la adquisición de conocimientos y la mejora de hábitos saludables de una manera amena y efectiva.",
+      "objetivo": "El objetivo de este proyecto es promocionar el lanzamiento del libro 'Cómo generar hábitos y divertirse en el proceso', a la vez que se dan a conocer diversos servicios relacionados con la analítica de datos, consultorías de educación superior, cursos, diplomados y otros.",
       "metodologia":[
         "Se elabora un mockup tomando en cuenta los referentes del cliente y los requerimientos específicos del proyecto. Una vez establecida una estructura base clara, se procede a diseñar un prototipo que permite simular la experiencia del usuario mientras navega e interactúa en las diferentes secciones de la página.",
         "Una vez que el diseño ha sido aprobado, se inicia la configuración de Wordpress y se procede a maquetar las diferentes secciones previamente establecidas con la ayuda de Elementor. Este proceso permite crear una página web atractiva, intuitiva y funcional que cumple con las expectativas del cliente y brinda una excelente experiencia de usuario."
@@ -57,19 +122,19 @@ export class HomeComponent {
       "enlace": "https://educacionyhabitos.com/"
     },
 
-
+    // Lal Joyería
     {
   
       "imgDestacada":"../assets/img/laljoyeria.jpg",
       "title": "Lal Joyería",
       "subTitle": "Tienda Virtual y Blog",
-      "summary":"Implementación de una tienda virtual que ofrece una amplia variedad de joyas, piedras preciosas y semipreciosas. Trabajando con una estructura previamente definida por el cliente, el objetivo fue personalizar el flujo de compra y habilitar una pasarela de pagos eficiente y segura.<br> Además, se ofrece asesoría sobre el funcionamiento de <b>WooCommerce</b> y sus características, para que el cliente pueda administrar la tienda de manera autónoma. ",
+      "summary":"Implementación de una tienda virtual que ofrece una amplia variedad de joyas, piedras preciosas y semipreciosas.Se implementa una pasarela de pagos eficiente y segura.<br> Además, se ofrece asesoría sobre el funcionamiento de <b>WooCommerce</b> y sus características, para que el cliente pueda administrar la tienda de manera autónoma. ",
       "date": "Finalizada en Marzo del 2023",
-      "objetivo": "El objetivo de este proyecto es en primera instancia optimizar el sitio ya que el cliente ya tenia una configuración y estructura realizada por él mismo. Por otro lado se requiere implementar, configurar y personalizar las caracteristicas que ofrece Woocommerce.",
+      "objetivo": "Optimización del sitio, personalización e implemetación de WooCommerce y entorno de Google.",
       "metodologia":[
         "Se realiza un analisis para identificar el estado del sitio, posterior a esto se comienza a implementar Woocommerce y Mercado Pago. ",
         "Una vez que se realizan las configuraciones iniciales, se implementa sección de 'Lista de deseos' y se comienza la personalización de las diferentes secciones incluyendo carrito, pagina de producto, categorias, filtros, checkout y cuenta de usuario.",
-        "Luego de tener una flujo funcional se realiza la vinculación al entorno de Google y Facebook. Se configuran los eventos teniendo en cuenta las campañas y objetivos del Trafikker Digital.",
+        "Luego de tener una flujo funcional se realiza la vinculación al entorno de Google y Facebook. Se configuran los eventos teniendo en cuenta las campañas y objetivos del Traficker Digital.",
         "Se personaliza y configura las seccion del blog y de sus articulos teniendo en cuenta estilo grafico establecido por el cliente."
       ],
       "tecnologias": [
@@ -124,18 +189,19 @@ export class HomeComponent {
       "enlace": "https://laljoyeria.com/"
     },
 
+    //Seletiene Shop
     {
       "imgDestacada":"../assets/img/seletiene.jpg",
       "title": "Seletiene Shop",
       "subTitle": "Tienda Virtual Dropshipping",
       "summary":"Tienda virtual bajo el modelo de <b>Dropshipping</b> con una estrategia efectiva para aumentar las ventas y la visibilidad de la marca en línea. Este proceso implica la creación de una tienda en línea que vende productos sin tener un inventario físico propio, y la promoción de dicha tienda mediante campañas por medio del entorno que ofrece Google y Facebook.",
       "date": "Finalizada en Diciembre del 2022",
-      "objetivo": " crear una tienda virtual completamente personalizada que se vincule con el modelo de negocio dropshipping con Dropi, para ofrecer una experiencia de compra fluida y sencilla para los clientes. Además, se integrarán eventos de seguimiento de Google y Facebook para crear anuncios efectivos y aumentar la visibilidad de la tienda.",
+      "objetivo": "Tienda virtual personalizada que se vinculará con el modelo de negocio dropshipping mediante la herramienta Dropi. Además, se debe vincular y configurar el entorno de Google y Facebook para llevar a cabo campañas de marketing digital y aumentar la visibilidad y ventas del sitio web.",
       "metodologia":[
-        "Se identifican las necesidades de la tienda, se configura el entorno en Wordpress. Se instala Woocommerce y se configuran las caracteristicas según necesidades del cliente incluyendo configuraciones de costos de envío y campos necesarios para avanzar en el checkout. Se establece conexión con la API de Dropi y se realizan las pruebas correspondientes.",
+        "Se identifican las necesidades de la tienda, se configura el entorno en Wordpress y se instala Woocommerce. Se realizan los ajustes de envío y campos necesarios para avanzar en el checkout.",
         "Se establece conexión con la API de Dropi y se realizan las pruebas correspondientes.",
         "Con ayuda de Divi, se construye una identidad visual teniendo en cuenta los recursos multimedia, colores y tiopgrafias ya establcidas por el cliente. Se desarolla el header con ayuda de bloques con código HTML, CSS Y JS ya que el cliente solicita un diseño particular que no es posible ealizar con los bloques que trae el constructor por defecto.",
-        "Se instala el Pixel de Google y Facebook. Se crean los eventos siguiendo las indicaciones del Trafikker Digital para realizar el lanzamiento de las diferentes campañas publicitarias."
+        "Se instala el Pixel de Google y Facebook. Se crean los eventos siguiendo las indicaciones del Traficker Digital para realizar el lanzamiento de las diferentes campañas publicitarias."
       ],
       "tecnologias": [
         {
@@ -196,11 +262,10 @@ export class HomeComponent {
         "/assets/img/seletiene6.jpg",
 
       ],
-      "enlace": "https://educacionyhabitos.com/"
+      "enlace": "https://seletieneshop.com.co/"
     },
 
-    
-
+    //Smart Law Tech
     {
 
       "imgDestacada":"../assets/img/slt.jpg",
@@ -252,7 +317,7 @@ export class HomeComponent {
         "/assets/img/slt3.jpg"
 
       ],
-      "enlace": "https://educacionyhabitos.com/",
+      "enlace": "https://stl-test.netlify.app/",
       "anotacion": "* Actualmente el sitio ya no se encuentra en linea,sin embargo este enlace lleva a uno de los prototipos funcionales creados y alojados en un servidor provisional"
     }
   

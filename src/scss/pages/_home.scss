@@ -114,11 +114,12 @@
   .about-me{
     background-color: #343a40;
     margin: 0 1.5rem 1.5rem 1.5rem;
-    padding: 3rem 1.5rem;
+    padding: 1.5rem;
 
     @include min-w(992){
       width: 65%;
       margin: 0 0 0 1rem;
+
     }
   }
 
@@ -131,7 +132,7 @@
   .skills{
     background-color: #343a40;
     margin: 0 1.5rem 1.5rem 1.5rem;
-    padding: 3rem 1.5rem;
+    padding: 1.5rem;
     
     @include min-w(992){
       width: 35%;
@@ -441,8 +442,6 @@
 
   &:hover{
     transform: scale(1.09);
-    cursor: pointer;
-
     
   }
 
