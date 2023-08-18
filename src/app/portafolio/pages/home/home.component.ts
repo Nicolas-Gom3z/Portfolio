@@ -11,6 +11,69 @@ export class HomeComponent {
 
   cards:PortafolioCard[] = [
 
+    //Joja Beauty
+    {
+      "imgDestacada":"../assets/img/joja.jpg",
+      "title": "Joja Beauty",
+      "subTitle": "Tienda Producto de Belleza",
+      "summary":"Diseño y desarrollo integral de una tienda virtual, cuidando cada detalle y tomando en consideración las preferencias y gustos únicos del cliente. Implementamos y configuramos Mercado Pago, una solución confiable y segura, como la pasarela de pagos principal. Así mismo se vincula el entorno Google y Meta para el lanzamiento de anuncios publicitarios y temas de marketing digital",
+      "date": "Finalizada en Agosto del 2023",
+      "objetivo": "El objetivo de este proyecto es crear una tienda virtual de productos relacionados al maquillaje y el cuidado personal, teniendo en cuenta las referencias del cliente",
+      "metodologia":[
+        "Se diseña el mockup del sitio y se define el flujo de compra con sus diferentes interfaces.",
+        "Se desarrolla el flujo de compra, garantizando un embudo eficiente en el mpmento de la compra, asi mismo se configura la pasarela de Pago 'Mercado Pago'. "
+      ],
+      "tecnologias": [
+        {
+          "imagen": "/assets/img/wordpress.svg",
+          "texto": "Wordpress"
+        },
+        {
+          "imagen": "/assets/img/Divi.svg",
+          "texto": "Divi"
+        },
+        {
+          "imagen": "/assets/img/figma.svg",
+          "texto": "Figma"
+        },
+        {
+          "imagen": "/assets/img/photoshop.svg",
+          "texto": "Adobe Photoshop"
+        },
+        {
+          "imagen": "/assets/img/illustrator.svg",
+          "texto": "Adobe Illustrator"
+        },
+        {
+          "imagen": "/assets/img/css.svg",
+          "texto": "CSS"
+        },
+        {
+          "imagen": "/assets/img/css.svg",
+          "texto": "CSS"
+        },
+        {
+          "imagen": "/assets/img/tagmanager.svg",
+          "texto": "Google Tag Manager"
+        },
+        {
+          "imagen": "/assets/img/analytics.svg",
+          "texto": "Google Analytics"
+        },
+        {
+          "imagen": "/assets/img/facebook.svg",
+          "texto": "Business Manager"
+        }
+      ],
+      "poster":[
+        "/assets/img/joja1.jpg",
+        "/assets/img/joja2.jpg",
+        "/assets/img/joja3.jpg",
+        "/assets/img/joja4.jpg",
+
+      ],
+      enlace: 'https://jojabeauty.com.co/'
+    },
     //Kojagraphic
     {
       "imgDestacada":"../assets/img/Kojak.jpg",
@@ -124,7 +187,7 @@ export class HomeComponent {
 
     // Lal Joyería
     {
-  
+
       "imgDestacada":"../assets/img/laljoyeria.jpg",
       "title": "Lal Joyería",
       "subTitle": "Tienda Virtual y Blog",
@@ -308,8 +371,8 @@ export class HomeComponent {
           "imagen": "/assets/img/ae.svg",
           "texto": "After Effects"
         }
-        
-        
+
+
       ],
       "poster":[
         "/assets/img/slt1.jpg",
@@ -320,11 +383,11 @@ export class HomeComponent {
       "enlace": "https://stl-test.netlify.app/",
       "anotacion": "* Actualmente el sitio ya no se encuentra en linea,sin embargo este enlace lleva a uno de los prototipos funcionales creados y alojados en un servidor provisional"
     }
-  
-  
+
+
 
   ]
 
-  
+
 
 }

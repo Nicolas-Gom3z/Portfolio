@@ -5,12 +5,11 @@
     <div class="img-container">
       <img src="{{card.imgDestacada}}" class="img-fluid" alt="...">
     </div>
-    
+
     <div class="col">
       <div class="card-body">
         <div class="title-container">
-          <h5 class="card-title">{{card.title}}</h5><span class="text-primary">{{card.subTitle}}</span> 
-        </div>
+          <h5 class="card-title">{{card.title}}</h5><span class="text-primary mb-2">{{card.subTitle}}</span>
         <p class="card-text summary-text" [innerHTML]="card.summary"></p>
         <p class="card-text"><small class="text-body-secondary">{{card.date}}</small></p>
         <button class="btn btn-outline-primary" data-bs-toggle="modal"
@@ -41,26 +40,26 @@
 
             <h3 class="fs-5 text-primary">Metodología Utilizada</h3>
             <p class="metodologia-content" *ngFor="let parrafo of card.metodologia" [innerHTML]="parrafo"></p>
-            
+
             <h3 class="fs-5 text-primary">Tecnologias y herramientas utilizadas</h3>
             <ul class="tools-list mt-4">
               <li *ngFor="let item of card.tecnologias">
                 <img class="me-2" src="{{item.imagen}}" alt=""><span>{{item.texto}}</span></li>
 
             </ul>
-  
+
           </div>
-  
+
           <div class="media py-3">
             <!-- <img src="{{card.poster}}" alt=""> -->
 
             <div id="{{idCreator('Carrousel')}}" class="carousel slide mb-3" data-bs-ride="carousel">
-              
+
               <div class="carousel-inner">
                 <div class="carousel-item" *ngFor="let item of card.poster;let i = index" [ngClass]="{'active':i == 0}" >
                   <img src="{{item}}" class="d-block w-100" alt="...">
                 </div>
-                
+
               </div>
               <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#'+idCreator('Carrousel')" data-bs-slide="prev">
                 <span aria-hidden="true"><i class="bi bi-caret-left-fill"></i></span>
@@ -78,17 +77,17 @@
 
             <a *ngIf="card.enlace" href="{{card.enlace}}" target="_blank" class="btn btn-outline-primary my-4"> Visitar sitio</a>
 
-            
+
 
           </div>
         </div>
 
-        
+
 
       </div>
 
-      
+
 
     </div>
   </div>
-</div> 
+</div>
