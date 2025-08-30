@@ -71,8 +71,7 @@ export class HomeComponent {
         "/assets/img/joja3.jpg",
         "/assets/img/joja4.jpg",
 
-      ],
-      enlace: 'https://jojabeauty.com.co/'
+      ]
     },
     //Kojagraphic
     {
@@ -324,8 +323,7 @@ export class HomeComponent {
         "/assets/img/seletiene5.jpg",
         "/assets/img/seletiene6.jpg",
 
-      ],
-      "enlace": "https://seletieneshop.com.co/"
+      ]
     },
 
     //Smart Law Tech
